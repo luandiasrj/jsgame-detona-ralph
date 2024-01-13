@@ -5,3 +5,7 @@
   /* font-family: "Bebas Neue", sans-serif; */
   font-family: "Press Start 2P", cursive;
 }
+
+img {
+  image-rendering: pixelated;
+}

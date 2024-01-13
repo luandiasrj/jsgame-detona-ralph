@@ -1,3 +1,20 @@
+:root {
+  --main-font-size: 1rem;
+  --heading-font-size: 1.5rem;
+  --main-line-height: 1.5rem;
+  --main-margin-top: 1rem;
+  --main-color: #ffffff;
+  --highlight-color: #ffd700;
+  --secondary-color: #ff0000;
+  --dark-overlay: rgba(0, 0, 0, 0.9);
+  --light-overlay: rgba(0, 0, 0, 0.1);
+  --gradient-overlay: linear-gradient(
+    to bottom,
+    var(--light-overlay),
+    var(--dark-overlay)
+  );
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -9,31 +26,127 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
   height: 90px;
   width: 100%;
   background-color: #000000;
-  color: #ffffff;
-  border-bottom: 5px solid #ffd700;
+  color: var(--main-color);
+  border-bottom: 5px solid var(--highlight-color);
+}
+
+.menu h2:nth-child(1) {
+  color: var(--secondary-color);
 }
 
 .panel {
-  margin-top: 1rem;
+  width: 530px;
+  height: 530px;
+  margin: auto auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: var(--gradient-overlay);
+  border-radius: 1rem;
+  color: var(--main-color);
+}
+
+.panel a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: var(--heading-font-size);
+  font-weight: bold;
+}
+
+.panel a:hover {
+  color: var(--highlight-color);
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.small-text {
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+}
+
+.margin-top {
+  margin-top: var(--main-margin-top);
+}
+
+#game-over {
+  font-size: var(--heading-font-size);
+  padding: 1rem;
+}
+
+#pontuacao {
+  margin: var(--main-margin-top) auto;
+  text-align: center;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+}
+
+.texto {
+  margin: var(--main-margin-top) auto;
+  color: var(--main-color);
+}
+
+.texto a {
+  color: var(--gradient-overlay);
 }
 
 .square {
-  height: 150px;
-  width: 150px;
-  border: 1px solid #000000;
-  background-color: #1aeaa5;
+  height: 165px;
+  width: 165px;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  /* Degradê transparente */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.2)
+  );
+  cursor: url("../images/martelo1.png"), auto;
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+}
+
+.square:active {
+  cursor: url("../images/martelo2.png"), auto;
 }
 
 .enemy {
-  background-image: url("../images/ralph.png");
-  background-size: cover;
+  background-image: url("../images/ralph square.gif"),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.2)
+    );
+  background-repeat: no-repeat;
+  background-size: 165px;
+  image-rendering: pixelated;
+
+  animation: slideInOut 1.5s ease-in-out;
+}
+
+@keyframes slideInOut {
+  0% {
+    background-position: 0 -300%;
+    /* Começa escondido abaixo do elemento */
+  }
+
+  30% {
+    background-position: 0 5%;
+    /* Atinge a posição inicial (totalmente visível) na metade da animação */
+  }
+
+  80% {
+    background-position: 0 5%;
+    /* Fica parado por um segundo */
+  }
+
+  100% {
+    background-position: 0 -500%;
+    /* Retorna à posição escondida no final da animação */
+  }
 }
 
 .menu-lives {
@@ -44,5 +157,22 @@
 
 .menu-time h2:nth-child(2),
 .menu-score h2:nth-child(2) {
-  margin-top: 1rem;
+  margin-top: var(--main-margin-top);
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none !important;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

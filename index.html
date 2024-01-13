@@ -2,59 +2,75 @@
 <html lang="pt-br">
 
 <head>
-
   <!-- settings -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detona Ralph</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detone o Ralph</title>
 
   <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap"
+    rel="stylesheet" />
 
   <!-- styles -->
-  <link rel="stylesheet" href="./src/styles/reset.css">
-  <link rel="stylesheet" href="./src/styles/main.css">
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/main.css" />
+  <link rel="icon" type="image/png" href="./src/images/favicon.ico" />
 </head>
 
 <body>
-
   <div class="container">
     <div class="menu">
       <div class="menu-time">
-        <h2 style="color: red;">Time Left</h2>
+        <h2>Time Left</h2>
         <h2 id="time-left">0</h2>
       </div>
       <div class="menu-score">
-        <h2 style="color: red;">Your Score</h2>
+        <h2>Your Score</h2>
         <h2 id="score">0</h2>
       </div>
       <div class="menu-lives">
-        <img src="./src/images/player.png" alt="foto do jogador" height="60px" />
-        <h2>x3</h2>
+        <img src="./src/images/player.png" alt="foto do jogador" width="36px" />&nbsp;
+        <h2>x<span id="lives">3</span></h2>
       </div>
     </div>
 
     <div class="panel">
-      <div class="panel-row">
-        <div class="square " id="1"></div>
+      <div id="start" class="center">
+        <img src="./src/images/Ralph.gif" alt="foto do Ralph" width="189px" /><br />
+        <h1>Detone o Ralph!</h1><p class="texto">Acerte o Ralph pelo menos 60x para acabar com suas maldades!</p>
+       
+        <a href="#" id="start-game">Iniciar jogo</a>
+      </div>
+
+      <div class="panel-row hide">
+        <div class="square" id="1"></div>
         <div class="square" id="2"></div>
         <div class="square" id="3"></div>
       </div>
 
-      <div class="panel-row">
-        <div class="square enemy" id="4"></div>
+      <div class="panel-row hide">
+        <div class="square" id="4"></div>
         <div class="square" id="5"></div>
         <div class="square" id="6"></div>
       </div>
 
-      <div class="panel-row">
+      <div class="panel-row hide">
         <div class="square" id="7"></div>
         <div class="square" id="8"></div>
         <div class="square" id="9"></div>
       </div>
+
+      <div id="game-over" class="panel center hide ">
+        <img src="./src/images/gameover.gif" alt="foto do ralph" id="ralph" width="198px" /><br />
+        <h1 id="game-title">GAME OVER!</h1>
+        <h2 id="pontuacao"></h2>
+        <a href="#" id="restart-game">Iniciar novamente</a>
+      </div>
+
     </div>
+     <p class="texto">Acesse o código fonte em: <a href="https://github.com/luandiasrj/jsgame-detona-ralph">https://github.com/luandiasrj/jsgame-detona-ralph</a></p>
   </div>
 
   <script defer src="./src/scripts/engine.js"></script>

@@ -1,7 +1,7 @@
 ## Awesome JSGame Detona Ralph
 
 <p align="center">
-  <img src="https://github.com/digitalinnovationone/jsgame-detona-ralph/raw/main/assets/images/logo.png" alt="JSGame Detona Ralph Logo">
+<img src="./src/images/ralph.gif" alt="JSGame Detona Ralph Logo" style="image-rendering: pixelated; width: 126px;">
 </p>
 
 Bem-vindo ao **JSGame Detona Ralph**! Neste repositório, você encontrará um jogo divertido baseado no famoso filme "Detona Ralph". Este projeto não apenas oferece entretenimento, mas também demonstra várias técnicas avançadas de desenvolvimento de jogos em JavaScript.
@@ -14,14 +14,28 @@ Bem-vindo ao **JSGame Detona Ralph**! Neste repositório, você encontrará um j
 
 ### Funcionalidades Incríveis
 
-- **Sistema de Pontuação**: Acompanhe sua pontuação à medida que progride no jogo e desafie seus amigos a superá-la, clique no quadrado que o Ralph se encontre
+- **Sistema de Pontuação**: Acompanhe sua pontuação à medida que progride no jogo e desafie seus amigos a superá-la, clique no quadrado onde o Ralph se encontra.
 
 ### Como Jogar
 
-1. Clone este repositório para sua máquina local.
-2. Abra o arquivo `index.html` em seu navegador web.
-3. Use as setas direcionais para mover o personagem e a barra de espaço para interagir.
-4. Divirta-se explorando e coletando moedas, mas fique atento aos inimigos!
+Acesse: [JSGame Detona Ralph](https://luandiasrj.github.io/jsgame-detona-ralph/)
+
+1. Clique em iniciar jogo.
+2. Clique no Ralph antes dele desaparecer.
+
+### Melhorias
+
+- Criada a manipulação da contagem de vidas.
+- Adicionada tela de título do jogo.
+- Adicionada tela de game-over.
+- Adicionada tela parabenizando quando acerta mais de 60 vezes.-
+- Adicionadas músicas em todas as telas.
+- Adicionados efeitos sonoros.
+- Adicionado o martelo do Conserta Felix Jr. como cursor.
+- Melhoria geral do layout da tela do jogo.
+- Sprites originais e animados extraídos dos jogos oficiais.
+- Padronização no tamanho dos sprites 3x com filtro nearest neighbor.
+- Gravação da maior pontuação.
 
 ### Contribuição
 
@@ -30,6 +44,8 @@ Contribuições são bem-vindas! Se você deseja melhorar este jogo, adicionar n
 ### Créditos
 
 Este jogo foi desenvolvido como parte de um projeto educacional da Digital Innovation One.
+
+As licenças das músicas e sprites encontram-se nos READMEs das respectivas pastas.
 
 ---
 
