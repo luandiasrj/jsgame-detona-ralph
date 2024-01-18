@@ -26,18 +26,18 @@ Acesse: [JSGame Detona Ralph](https://luandiasrj.github.io/jsgame-detona-ralph/)
 ### Melhorias
 - Separação de código em módulos.
 - Criada a manipulação da contagem de vidas.
-- Criado o aumento de dificuldade.
-- Criado animações fluídas na aparição do personagem.
+- Adicionado aumento de dificuldade conforme acertos.
+- Adicionada animações fluídas na aparição do personagem.
 - Adicionada tela de título do jogo.
 - Adicionada tela de game-over.
-- Adicionada tela parabenizando quando acerta mais de 60 vezes.
+- Adicionada tela parabenizando quando acertar mais de 60 vezes.
 - Adicionadas músicas em todas as telas.
-- Adicionados efeitos sonoros.
+- Adicionado efeitos sonoros.
 - Adicionado o martelo do Conserta Felix Jr. como cursor.
 - Melhoria geral do layout da tela do jogo.
 - Sprites originais e animados extraídos dos jogos oficiais.
-- Padronização no tamanho dos sprites 3x com filtro nearest neighbor.
-- Gravação da maior pontuação.
+- Padronização no tamanho dos sprites em 3x com filtro nearest neighbor.
+- Gravação da última maior pontuação.
 
 ### Contribuição
 
